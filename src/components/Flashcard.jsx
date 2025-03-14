@@ -3,6 +3,13 @@ import { useState } from "react";
 const Flashcard = ({ card, flipped, setFlipped, resetFeedback, setFeedback, feedback }) => {
   const [userInput, setUserInput] = useState(""); // Stores user input
 
+  // Define styles for different difficulty levels
+  const flashcardStyles = {
+    easy: { backgroundColor: 'orange' },  // Green for easy
+    medium: { backgroundColor: 'mediumpurple' }, // Yellow for medium
+    hard: { backgroundColor: 'lightcoral' },  // Red for hard
+  };
+  
   const handleSubmit = () => {
     // Check if the user input matches the answer (case insensitive)
     if (userInput.trim().toLowerCase() === card.answer.toLowerCase()) {
@@ -26,7 +33,9 @@ const Flashcard = ({ card, flipped, setFlipped, resetFeedback, setFeedback, feed
     <div className="flashcard-container">
       <div
         className="flashcard"
+        style={flashcardStyles[card.difficulty]} // Apply the background color based on difficulty
         onClick={() => flipped || setFlipped(true)} // Allow flip when not already flipped
+
       >
         {flipped ? card.answer : card.question}
       </div>
