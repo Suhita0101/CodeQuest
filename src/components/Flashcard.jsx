@@ -5,9 +5,9 @@ const Flashcard = ({ card, flipped, setFlipped, resetFeedback, setFeedback, feed
 
   // Define styles for different difficulty levels
   const flashcardStyles = {
-    easy: { backgroundColor: 'orange' },  // Green for easy
-    medium: { backgroundColor: 'mediumpurple' }, // Yellow for medium
-    hard: { backgroundColor: 'lightcoral' },  // Red for hard
+    easy: { backgroundColor: 'orange' },  // Orange for easy
+    medium: { backgroundColor: 'mediumpurple' }, // Medium purple for medium
+    hard: { backgroundColor: 'lightcoral' },  // Light coral for hard
   };
   
   const handleSubmit = () => {
@@ -29,15 +29,18 @@ const Flashcard = ({ card, flipped, setFlipped, resetFeedback, setFeedback, feed
     resetFeedback(); // Reset flip state to give another chance without moving to next card
   };
 
+  const toggleFlip = () => {
+    setFlipped(!flipped); // Toggle the flip state when the card is clicked
+  };
+
   return (
     <div className="flashcard-container">
       <div
         className="flashcard"
         style={flashcardStyles[card.difficulty]} // Apply the background color based on difficulty
-        onClick={() => flipped || setFlipped(true)} // Allow flip when not already flipped
-
+        onClick={toggleFlip} // Toggle flip state on click
       >
-        {flipped ? card.answer : card.question}
+        {flipped ? card.answer : card.question} {/* Display answer if flipped, else question */}
       </div>
 
       {/* Input and submit button for user to guess */}
