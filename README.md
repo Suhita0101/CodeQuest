@@ -1,52 +1,53 @@
-# Web Development Project 3 - CodeQuest
+# 💻 CodeQuest
+CodeQuest is an interactive web app designed for computer science students to test and strengthen their knowledge through an engaging flashcard trivia experience. Users can answer questions, receive immediate feedback, and navigate through cards at their own pace.
 
-Submitted by: Suhita Maddukuri
+✨ Features
+- 📝 Interactive Flashcards:
+Users can enter guesses in an input box and receive instant visual feedback indicating if the answer is correct or incorrect.
+- 🔄 Card Navigation:
+Next Button: Move to the next card in sequence.
+Back Button: Return to the previous card.
+- 🎨 Difficulty-Based Coloring:
+Flashcards are color-coded based on difficulty to help users prioritize learning.
 
-This web app: It is a website for computer science students to test their knowledge with an interesting trivia.
+🧰 Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Build Tool: Vite
+- Runtime: Node.js
 
-Time spent: 6
+📸 Screenshots
+<img width="1470" height="798" alt="Screenshot 2025-10-12 at 7 44 14 PM" src="https://github.com/user-attachments/assets/e77ac9b6-9856-437c-9718-4a49a322b1c5" />
 
-## Required Features
+🧭 Getting Started
+Follow the steps below to run this project locally on your machine.
 
-The following **required** functionality is completed:
+1️⃣ Download the Project:
+- Click the green “Code” button on GitHub and select “Download ZIP”, then unzip the file.
 
-- [Yes] **The user can enter their guess in a box before seeing the flipside of the card**
-- [Yes] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
-- [Yes] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
-- [Yes] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
+2️⃣ Open the Project Folder in Terminal
+- cd hobbyhub
 
-The following **optional** features are implemented:
+3️⃣ Install Dependencies
+- Make sure Node.js and npm are installed:
+node -v
+npm -v
+- If you see “command not found”, download Node.js and install it.
+- Then install the required dependencies:
+npm install
 
-- [No] A shuffle button is used to randomize the order of the cards
-- [No] A user's answer may be counted as correct even when it is slightly different from the target answer
-- [No] A counter displays the user's current and longest streak of correct responses
-- [No] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
+4️⃣ Start the Development Server
+npm run dev
+- Once the server starts, you’ll see a local development URL like:
+http://localhost:5173/
+- 🖥 Mac users: Cmd + click the link or copy and paste it into your browser.
+- 💻 Windows users: Ctrl + click the link or copy and paste it into your browser.
 
-The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
-I added colors to the flashcards based on their difficulty.
 
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-https://www.loom.com/share/ac45a17a87d642c38193868dc9299d42?sid=3c79f9c1-77f4-400d-b857-e75602d57c52
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Suhita Maddukuri
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
